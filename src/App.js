@@ -11,7 +11,6 @@ function App() {
     console.log(encuesta)
     try {
       const res = await axios.post("https://o3vswyvc2e.execute-api.us-east-2.amazonaws.com/prod3/postformulario", encuesta);
-      //const res = await axios.post("https://fsakd9q7kc.execute-api.us-east-2.amazonaws.com/test-tarea-www/encuesta", encuesta); 
     } catch (error) {
       console.log(error);
     }
@@ -20,11 +19,7 @@ function App() {
   const getEncuestas = async () => {;
     const encuestas2 = await axios.get("https://w5cvv4uo0e.execute-api.us-east-2.amazonaws.com/staging/data");
     console.log(encuestas2.data.body)
-    //setEncuestas(JSON.parse(encuestas));
-    //const encuestas = await axios.get("https://fsakd9q7kc.execute-api.us-east-2.amazonaws.com/test-tarea-www/encuesta");
-    //console.log(JSON.parse(encuestas.data.body))
     setEncuestas(encuestas2.data.body);
-    //setEncuestas(JSON.parse(encuestas.data.body));
   }
 
   useEffect(getEncuestas, []) 
