@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');    
+
+:root {
+  --text: rgb(199, 199, 199);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 55%; 
+}
+
+body {
+  background: #24C6DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.form {
+  width: 35%;
+}
+
+.list {
+  width: 45%;
+}
+
+form {
+  background-color: rgb(36, 36, 36);
+  padding: 5rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 8rem auto;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 38px -9px rgba(0,0,0,0.73);
+  position: relative;
+  color: var(--text);
+  font-size: 1.7rem;
+}
+
+form .form-desc {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  background-color: rgb(36, 36, 36);
+  padding: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+form label {
+  font-size: 1.5rem;
+  color: rgb(144, 144, 144);
+}
+
+form input[type=submit] {
+  background-color: #514A9D;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover{
+  background-color: #635ac5;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  color: var(--text);
+  margin: 2rem auto;
+  background-color: rgb(36, 36, 36);
+  padding: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 38px -9px rgba(0,0,0,0.73);
+}
+
+li {
+  display: flex;
+  gap: 1rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--text);
+}
+
+input, textarea {
+  color: inherit;
+  font-family: inherit;
+  background-color: rgb(47, 47, 47);
+  border: none;
+  padding: 1rem;
+  font-size: inherit;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #635ac5;
+}
